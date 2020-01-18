@@ -22,7 +22,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:42:42.556Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -72,6 +72,8 @@ public class BrandedFoodObjectItems   {
   private List<String> minerals = null;
   @JsonProperty("traces")
   private List<String> traces = null;
+  @JsonProperty("vitamins")
+  private List<String> vitamins = null;
   @JsonProperty("common_name")
   private String commonName = null;
   @JsonProperty("description")
@@ -505,6 +507,24 @@ public class BrandedFoodObjectItems   {
   }
 
   /**
+   * An array of vitamins that this item contains
+   **/
+  public BrandedFoodObjectItems vitamins(List<String> vitamins) {
+    this.vitamins = vitamins;
+    return this;
+  }
+
+  
+  @Schema(description = "An array of vitamins that this item contains")
+  @JsonProperty("vitamins")
+  public List<String> getVitamins() {
+    return vitamins;
+  }
+  public void setVitamins(List<String> vitamins) {
+    this.vitamins = vitamins;
+  }
+
+  /**
    * Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
    **/
   public BrandedFoodObjectItems commonName(String commonName) {
@@ -610,6 +630,7 @@ public class BrandedFoodObjectItems   {
         Objects.equals(hasEnglishIngredients, brandedFoodObjectItems.hasEnglishIngredients) &&
         Objects.equals(minerals, brandedFoodObjectItems.minerals) &&
         Objects.equals(traces, brandedFoodObjectItems.traces) &&
+        Objects.equals(vitamins, brandedFoodObjectItems.vitamins) &&
         Objects.equals(commonName, brandedFoodObjectItems.commonName) &&
         Objects.equals(description, brandedFoodObjectItems.description) &&
         Objects.equals(keywords, brandedFoodObjectItems.keywords) &&
@@ -618,7 +639,7 @@ public class BrandedFoodObjectItems   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, components, portions, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, commonName, description, keywords, footnote);
+    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, components, portions, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, commonName, description, keywords, footnote);
   }
 
   @Override
@@ -649,6 +670,7 @@ public class BrandedFoodObjectItems   {
     sb.append("    hasEnglishIngredients: ").append(toIndentedString(hasEnglishIngredients)).append("\n");
     sb.append("    minerals: ").append(toIndentedString(minerals)).append("\n");
     sb.append("    traces: ").append(toIndentedString(traces)).append("\n");
+    sb.append("    vitamins: ").append(toIndentedString(vitamins)).append("\n");
     sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");

@@ -12,7 +12,7 @@ import io.swagger.model.*;
 
 import io.swagger.model.BrandedFoodObject;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")public class FoodController  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:42:42.556Z[GMT]")public class FoodController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map
    * Directly to operation calls from the routing logic.  Because the inflector
