@@ -22,7 +22,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:42:42.556Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:45:47Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -507,7 +507,7 @@ public class BrandedFoodObjectItems   {
   }
 
   /**
-   * An array of vitamins that this item contains
+   * An array of vitamins that can be found in this item
    **/
   public BrandedFoodObjectItems vitamins(List<String> vitamins) {
     this.vitamins = vitamins;
@@ -515,7 +515,7 @@ public class BrandedFoodObjectItems   {
   }
 
   
-  @Schema(description = "An array of vitamins that this item contains")
+  @Schema(description = "An array of vitamins that can be found in this item")
   @JsonProperty("vitamins")
   public List<String> getVitamins() {
     return vitamins;
