@@ -12,7 +12,7 @@ import java.util.List;
  * An object containing nutrient information from each source
  **/
 @Schema(description = "An object containing nutrient information from each source")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T14:08:32.053Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T14:14:30.632Z[GMT]")
 public class IngredientObjectNutrients   {
   @JsonProperty("usda")
   private List<BrandedFoodObjectNutrientsUsda> usda = null;
