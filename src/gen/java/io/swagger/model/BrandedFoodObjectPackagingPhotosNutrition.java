@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing photos of this item&#x27;s nutrition label
  **/
 @Schema(description = "An object containing photos of this item's nutrition label")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T14:14:30.632Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T23:19:12.861Z[GMT]")
 public class BrandedFoodObjectPackagingPhotosNutrition   {
   @JsonProperty("small")
   private String small = null;
