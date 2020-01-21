@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * An object containing information on a specific component of this food item
  **/
 @Schema(description = "An object containing information on a specific component of this food item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:53:38.204Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T14:08:32.053Z[GMT]")
 public class BrandedFoodObjectComponents   {
   @JsonProperty("name")
   private String name = null;

@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T16:53:38.204Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T14:08:32.053Z[GMT]")
 public class BrandedFoodObjectNutrientsUsda   {
   @JsonProperty("id")
   private Integer id = null;
@@ -23,12 +23,12 @@ public class BrandedFoodObjectNutrientsUsda   {
   private BigDecimal max = null;
   @JsonProperty("median")
   private BigDecimal median = null;
+  @JsonProperty("rank")
+  private Integer rank = null;
   @JsonProperty("data_points")
   private Integer dataPoints = null;
   @JsonProperty("footnote")
   private String footnote = null;
-  @JsonProperty("source")
-  private String source = null;
   @JsonProperty("description")
   private String description = null;
   /**
@@ -158,6 +158,24 @@ public class BrandedFoodObjectNutrientsUsda   {
   }
 
   /**
+   * Nutrient rank
+   **/
+  public BrandedFoodObjectNutrientsUsda rank(Integer rank) {
+    this.rank = rank;
+    return this;
+  }
+
+  
+  @Schema(description = "Nutrient rank")
+  @JsonProperty("rank")
+  public Integer getRank() {
+    return rank;
+  }
+  public void setRank(Integer rank) {
+    this.rank = rank;
+  }
+
+  /**
    * Number of observations on which the value is based
    **/
   public BrandedFoodObjectNutrientsUsda dataPoints(Integer dataPoints) {
@@ -196,31 +214,13 @@ public class BrandedFoodObjectNutrientsUsda   {
   /**
    * Description of the nutrient source
    **/
-  public BrandedFoodObjectNutrientsUsda source(String source) {
-    this.source = source;
-    return this;
-  }
-
-  
-  @Schema(description = "Description of the nutrient source")
-  @JsonProperty("source")
-  public String getSource() {
-    return source;
-  }
-  public void setSource(String source) {
-    this.source = source;
-  }
-
-  /**
-   * Description of how the food nutrient value was obtained
-   **/
   public BrandedFoodObjectNutrientsUsda description(String description) {
     this.description = description;
     return this;
   }
 
   
-  @Schema(description = "Description of how the food nutrient value was obtained")
+  @Schema(description = "Description of the nutrient source")
   @JsonProperty("description")
   public String getDescription() {
     return description;
@@ -246,15 +246,15 @@ public class BrandedFoodObjectNutrientsUsda   {
         Objects.equals(min, brandedFoodObjectNutrientsUsda.min) &&
         Objects.equals(max, brandedFoodObjectNutrientsUsda.max) &&
         Objects.equals(median, brandedFoodObjectNutrientsUsda.median) &&
+        Objects.equals(rank, brandedFoodObjectNutrientsUsda.rank) &&
         Objects.equals(dataPoints, brandedFoodObjectNutrientsUsda.dataPoints) &&
         Objects.equals(footnote, brandedFoodObjectNutrientsUsda.footnote) &&
-        Objects.equals(source, brandedFoodObjectNutrientsUsda.source) &&
         Objects.equals(description, brandedFoodObjectNutrientsUsda.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, per100g, measurementUnit, min, max, median, dataPoints, footnote, source, description);
+    return Objects.hash(id, name, per100g, measurementUnit, min, max, median, rank, dataPoints, footnote, description);
   }
 
   @Override
@@ -268,9 +268,9 @@ public class BrandedFoodObjectNutrientsUsda   {
     sb.append("    min: ").append(toIndentedString(min)).append("\n");
     sb.append("    max: ").append(toIndentedString(max)).append("\n");
     sb.append("    median: ").append(toIndentedString(median)).append("\n");
+    sb.append("    rank: ").append(toIndentedString(rank)).append("\n");
     sb.append("    dataPoints: ").append(toIndentedString(dataPoints)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
-    sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();
