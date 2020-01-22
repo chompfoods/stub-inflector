@@ -25,6 +25,8 @@ BrandedFoodObjectPackagingPhotosIngredients : io.swagger.model.BrandedFoodObject
 BrandedFoodObjectPackagingPhotosNutrition : io.swagger.model.BrandedFoodObjectPackagingPhotosNutrition
 BrandedFoodObjectPortions : io.swagger.model.BrandedFoodObjectPortions
 BrandedFoodObjectServing : io.swagger.model.BrandedFoodObjectServing
+BrandedFoodObjectServingChomp : io.swagger.model.BrandedFoodObjectServingChomp
+BrandedFoodObjectServingUsda : io.swagger.model.BrandedFoodObjectServingUsda
 IngredientObject : io.swagger.model.IngredientObject
 IngredientObjectItems : io.swagger.model.IngredientObjectItems
 IngredientObjectNutrients : io.swagger.model.IngredientObjectNutrients

@@ -6,43 +6,23 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 
 /**
- * An object containing basic packaging information about this item
+ * Serving information from as seen on ChompThis.com
  **/
-@Schema(description = "An object containing basic packaging information about this item")
+@Schema(description = "Serving information from as seen on ChompThis.com")
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T13:41:42.100Z[GMT]")
-public class BrandedFoodObjectPackage   {
-  @JsonProperty("quantity")
-  private Integer quantity = null;
+public class BrandedFoodObjectServingChomp   {
   @JsonProperty("size")
   private String size = null;
   /**
-   * Package quantity
+   * Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp)
    **/
-  public BrandedFoodObjectPackage quantity(Integer quantity) {
-    this.quantity = quantity;
-    return this;
-  }
-
-  
-  @Schema(description = "Package quantity")
-  @JsonProperty("quantity")
-  public Integer getQuantity() {
-    return quantity;
-  }
-  public void setQuantity(Integer quantity) {
-    this.quantity = quantity;
-  }
-
-  /**
-   * Package size
-   **/
-  public BrandedFoodObjectPackage size(String size) {
+  public BrandedFoodObjectServingChomp size(String size) {
     this.size = size;
     return this;
   }
 
   
-  @Schema(description = "Package size")
+  @Schema(description = "Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp)")
   @JsonProperty("size")
   public String getSize() {
     return size;
@@ -60,21 +40,19 @@ public class BrandedFoodObjectPackage   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObjectPackage brandedFoodObjectPackage = (BrandedFoodObjectPackage) o;
-    return Objects.equals(quantity, brandedFoodObjectPackage.quantity) &&
-        Objects.equals(size, brandedFoodObjectPackage.size);
+    BrandedFoodObjectServingChomp brandedFoodObjectServingChomp = (BrandedFoodObjectServingChomp) o;
+    return Objects.equals(size, brandedFoodObjectServingChomp.size);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quantity, size);
+    return Objects.hash(size);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObjectPackage {\n");
-    sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
+    sb.append("class BrandedFoodObjectServingChomp {\n");
     sb.append("    size: ").append(toIndentedString(size)).append("\n");
     sb.append("}");
     return sb.toString();
