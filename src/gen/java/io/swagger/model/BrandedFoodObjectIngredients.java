@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing this item&#x27;s ingredients in order of highest value to least
  **/
 @Schema(description = "An object containing this item's ingredients in order of highest value to least")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T14:07:33.900Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T15:36:19.687Z[GMT]")
 public class BrandedFoodObjectIngredients   {
   @JsonProperty("chomp")
   private String chomp = null;
@@ -34,7 +34,7 @@ public class BrandedFoodObjectIngredients   {
   }
 
   /**
-   * This branded food item's ingredients according to the USDA
+   * This branded food item's ingredients, according to the USDA
    **/
   public BrandedFoodObjectIngredients usda(String usda) {
     this.usda = usda;
@@ -42,7 +42,7 @@ public class BrandedFoodObjectIngredients   {
   }
 
   
-  @Schema(description = "This branded food item's ingredients according to the USDA")
+  @Schema(description = "This branded food item's ingredients, according to the USDA")
   @JsonProperty("usda")
   public String getUsda() {
     return usda;

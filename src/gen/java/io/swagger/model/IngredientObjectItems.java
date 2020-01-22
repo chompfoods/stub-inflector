@@ -17,7 +17,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T14:07:33.900Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T15:36:19.687Z[GMT]")
 public class IngredientObjectItems   {
   @JsonProperty("name")
   private String name = null;
@@ -35,8 +35,8 @@ public class IngredientObjectItems   {
   private List<BrandedFoodObjectComponents> components = null;
   @JsonProperty("portions")
   private List<BrandedFoodObjectPortions> portions = null;
-  @JsonProperty("common_name")
-  private String commonName = null;
+  @JsonProperty("common_names")
+  private String commonNames = null;
   @JsonProperty("description")
   private String description = null;
   @JsonProperty("footnote")
@@ -184,19 +184,19 @@ public class IngredientObjectItems   {
   /**
    * Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
    **/
-  public IngredientObjectItems commonName(String commonName) {
-    this.commonName = commonName;
+  public IngredientObjectItems commonNames(String commonNames) {
+    this.commonNames = commonNames;
     return this;
   }
 
   
   @Schema(description = "Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")")
-  @JsonProperty("common_name")
-  public String getCommonName() {
-    return commonName;
+  @JsonProperty("common_names")
+  public String getCommonNames() {
+    return commonNames;
   }
-  public void setCommonName(String commonName) {
-    this.commonName = commonName;
+  public void setCommonNames(String commonNames) {
+    this.commonNames = commonNames;
   }
 
   /**
@@ -253,14 +253,14 @@ public class IngredientObjectItems   {
         Objects.equals(dietLabels, ingredientObjectItems.dietLabels) &&
         Objects.equals(components, ingredientObjectItems.components) &&
         Objects.equals(portions, ingredientObjectItems.portions) &&
-        Objects.equals(commonName, ingredientObjectItems.commonName) &&
+        Objects.equals(commonNames, ingredientObjectItems.commonNames) &&
         Objects.equals(description, ingredientObjectItems.description) &&
         Objects.equals(footnote, ingredientObjectItems.footnote);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonName, description, footnote);
+    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonNames, description, footnote);
   }
 
   @Override
@@ -275,7 +275,7 @@ public class IngredientObjectItems   {
     sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
-    sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
+    sb.append("    commonNames: ").append(toIndentedString(commonNames)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
     sb.append("}");
