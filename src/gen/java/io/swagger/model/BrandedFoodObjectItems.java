@@ -7,6 +7,7 @@ import io.swagger.model.BrandedFoodObjectComponents;
 import io.swagger.model.BrandedFoodObjectCountryDetails;
 import io.swagger.model.BrandedFoodObjectDietFlags;
 import io.swagger.model.BrandedFoodObjectDietLabels;
+import io.swagger.model.BrandedFoodObjectIngredients;
 import io.swagger.model.BrandedFoodObjectNutrients;
 import io.swagger.model.BrandedFoodObjectPackage;
 import io.swagger.model.BrandedFoodObjectPackagingPhotos;
@@ -22,7 +23,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T23:19:12.861Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T12:50:39.948Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -31,7 +32,7 @@ public class BrandedFoodObjectItems   {
   @JsonProperty("brand")
   private String brand = null;
   @JsonProperty("ingredients")
-  private String ingredients = null;
+  private BrandedFoodObjectIngredients ingredients = null;
   @JsonProperty("package")
   private BrandedFoodObjectPackage _package = null;
   @JsonProperty("serving")
@@ -137,20 +138,19 @@ public class BrandedFoodObjectItems   {
   }
 
   /**
-   * Ingredients in order of highest value to least
    **/
-  public BrandedFoodObjectItems ingredients(String ingredients) {
+  public BrandedFoodObjectItems ingredients(BrandedFoodObjectIngredients ingredients) {
     this.ingredients = ingredients;
     return this;
   }
 
   
-  @Schema(description = "Ingredients in order of highest value to least")
+  @Schema(description = "")
   @JsonProperty("ingredients")
-  public String getIngredients() {
+  public BrandedFoodObjectIngredients getIngredients() {
     return ingredients;
   }
-  public void setIngredients(String ingredients) {
+  public void setIngredients(BrandedFoodObjectIngredients ingredients) {
     this.ingredients = ingredients;
   }
 

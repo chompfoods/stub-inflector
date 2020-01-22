@@ -13,6 +13,7 @@ BrandedFoodObjectDietLabels : io.swagger.model.BrandedFoodObjectDietLabels
 BrandedFoodObjectDietLabelsGlutenFree : io.swagger.model.BrandedFoodObjectDietLabelsGlutenFree
 BrandedFoodObjectDietLabelsVegan : io.swagger.model.BrandedFoodObjectDietLabelsVegan
 BrandedFoodObjectDietLabelsVegetarian : io.swagger.model.BrandedFoodObjectDietLabelsVegetarian
+BrandedFoodObjectIngredients : io.swagger.model.BrandedFoodObjectIngredients
 BrandedFoodObjectItems : io.swagger.model.BrandedFoodObjectItems
 BrandedFoodObjectNutrients : io.swagger.model.BrandedFoodObjectNutrients
 BrandedFoodObjectNutrientsChomp : io.swagger.model.BrandedFoodObjectNutrientsChomp

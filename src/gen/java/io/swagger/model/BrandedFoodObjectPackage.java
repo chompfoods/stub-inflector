@@ -9,12 +9,12 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing basic packaging information about this item
  **/
 @Schema(description = "An object containing basic packaging information about this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-21T23:19:12.861Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T12:50:39.948Z[GMT]")
 public class BrandedFoodObjectPackage   {
   @JsonProperty("quantity")
   private Integer quantity = null;
   @JsonProperty("size")
-  private Integer size = null;
+  private String size = null;
   /**
    * Package quantity
    **/
@@ -36,7 +36,7 @@ public class BrandedFoodObjectPackage   {
   /**
    * Package size
    **/
-  public BrandedFoodObjectPackage size(Integer size) {
+  public BrandedFoodObjectPackage size(String size) {
     this.size = size;
     return this;
   }
@@ -44,10 +44,10 @@ public class BrandedFoodObjectPackage   {
   
   @Schema(description = "Package size")
   @JsonProperty("size")
-  public Integer getSize() {
+  public String getSize() {
     return size;
   }
-  public void setSize(Integer size) {
+  public void setSize(String size) {
     this.size = size;
   }
 
