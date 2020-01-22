@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing this item&#x27;s ingredients in order of highest value to least
  **/
 @Schema(description = "An object containing this item's ingredients in order of highest value to least")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T12:50:39.948Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T12:55:44.095Z[GMT]")
 public class BrandedFoodObjectIngredients   {
   @JsonProperty("chomp")
   private String chomp = null;
