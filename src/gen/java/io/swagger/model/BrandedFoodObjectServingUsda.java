@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * Serving information from the USDA
  **/
 @Schema(description = "Serving information from the USDA")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T13:41:42.100Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T14:07:33.900Z[GMT]")
 public class BrandedFoodObjectServingUsda   {
   @JsonProperty("size")
   private String size = null;

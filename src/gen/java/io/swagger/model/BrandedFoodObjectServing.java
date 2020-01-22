@@ -11,7 +11,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing serving information for this item
  **/
 @Schema(description = "An object containing serving information for this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T13:41:42.100Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T14:07:33.900Z[GMT]")
 public class BrandedFoodObjectServing   {
   @JsonProperty("chomp")
   private BrandedFoodObjectServingChomp chomp = null;
