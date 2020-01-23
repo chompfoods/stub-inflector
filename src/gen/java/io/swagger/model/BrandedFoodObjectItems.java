@@ -21,7 +21,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:12:53.320Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:13:50.981Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -73,8 +73,6 @@ public class BrandedFoodObjectItems   {
   private String description = null;
   @JsonProperty("keywords")
   private List<String> keywords = null;
-  @JsonProperty("footnote")
-  private String footnote = null;
   /**
    * EAN/UPC barcode
    **/
@@ -516,24 +514,6 @@ public class BrandedFoodObjectItems   {
     this.keywords = keywords;
   }
 
-  /**
-   * Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
-   **/
-  public BrandedFoodObjectItems footnote(String footnote) {
-    this.footnote = footnote;
-    return this;
-  }
-
-  
-  @Schema(description = "Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.")
-  @JsonProperty("footnote")
-  public String getFootnote() {
-    return footnote;
-  }
-  public void setFootnote(String footnote) {
-    this.footnote = footnote;
-  }
-
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -568,13 +548,12 @@ public class BrandedFoodObjectItems   {
         Objects.equals(traces, brandedFoodObjectItems.traces) &&
         Objects.equals(vitamins, brandedFoodObjectItems.vitamins) &&
         Objects.equals(description, brandedFoodObjectItems.description) &&
-        Objects.equals(keywords, brandedFoodObjectItems.keywords) &&
-        Objects.equals(footnote, brandedFoodObjectItems.footnote);
+        Objects.equals(keywords, brandedFoodObjectItems.keywords);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords, footnote);
+    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords);
   }
 
   @Override
@@ -606,7 +585,6 @@ public class BrandedFoodObjectItems   {
     sb.append("    vitamins: ").append(toIndentedString(vitamins)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
-    sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
     sb.append("}");
     return sb.toString();
   }
