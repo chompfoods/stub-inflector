@@ -5,7 +5,6 @@ modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
   BrandedFoodObject : io.swagger.model.BrandedFoodObject
-BrandedFoodObjectCalorieConversionFactor : io.swagger.model.BrandedFoodObjectCalorieConversionFactor
 BrandedFoodObjectCountryDetails : io.swagger.model.BrandedFoodObjectCountryDetails
 BrandedFoodObjectDietFlags : io.swagger.model.BrandedFoodObjectDietFlags
 BrandedFoodObjectDietLabels : io.swagger.model.BrandedFoodObjectDietLabels
@@ -26,6 +25,7 @@ BrandedFoodObjectServing : io.swagger.model.BrandedFoodObjectServing
 BrandedFoodObjectServingChomp : io.swagger.model.BrandedFoodObjectServingChomp
 BrandedFoodObjectServingUsda : io.swagger.model.BrandedFoodObjectServingUsda
 IngredientObject : io.swagger.model.IngredientObject
+IngredientObjectCalorieConversionFactor : io.swagger.model.IngredientObjectCalorieConversionFactor
 IngredientObjectComponents : io.swagger.model.IngredientObjectComponents
 IngredientObjectItems : io.swagger.model.IngredientObjectItems
 IngredientObjectNutrients : io.swagger.model.IngredientObjectNutrients

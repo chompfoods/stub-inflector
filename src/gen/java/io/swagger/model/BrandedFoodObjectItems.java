@@ -2,7 +2,6 @@ package io.swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.model.BrandedFoodObjectCalorieConversionFactor;
 import io.swagger.model.BrandedFoodObjectCountryDetails;
 import io.swagger.model.BrandedFoodObjectDietFlags;
 import io.swagger.model.BrandedFoodObjectDietLabels;
@@ -12,7 +11,6 @@ import io.swagger.model.BrandedFoodObjectPackage;
 import io.swagger.model.BrandedFoodObjectPackagingPhotos;
 import io.swagger.model.BrandedFoodObjectServing;
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +19,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:13:50.981Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:15:58.178Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -39,10 +37,6 @@ public class BrandedFoodObjectItems   {
   private List<String> categories = null;
   @JsonProperty("nutrients")
   private BrandedFoodObjectNutrients nutrients = null;
-  @JsonProperty("calorie_conversion_factor")
-  private BrandedFoodObjectCalorieConversionFactor calorieConversionFactor = null;
-  @JsonProperty("protein_conversion_factor")
-  private BigDecimal proteinConversionFactor = null;
   @JsonProperty("diet_labels")
   private BrandedFoodObjectDietLabels dietLabels = null;
   @JsonProperty("diet_flags")
@@ -210,41 +204,6 @@ public class BrandedFoodObjectItems   {
   }
   public void setNutrients(BrandedFoodObjectNutrients nutrients) {
     this.nutrients = nutrients;
-  }
-
-  /**
-   **/
-  public BrandedFoodObjectItems calorieConversionFactor(BrandedFoodObjectCalorieConversionFactor calorieConversionFactor) {
-    this.calorieConversionFactor = calorieConversionFactor;
-    return this;
-  }
-
-  
-  @Schema(description = "")
-  @JsonProperty("calorie_conversion_factor")
-  public BrandedFoodObjectCalorieConversionFactor getCalorieConversionFactor() {
-    return calorieConversionFactor;
-  }
-  public void setCalorieConversionFactor(BrandedFoodObjectCalorieConversionFactor calorieConversionFactor) {
-    this.calorieConversionFactor = calorieConversionFactor;
-  }
-
-  /**
-   * The multiplication factor used to calculate protein from nitrogen
-   **/
-  public BrandedFoodObjectItems proteinConversionFactor(BigDecimal proteinConversionFactor) {
-    this.proteinConversionFactor = proteinConversionFactor;
-    return this;
-  }
-
-  
-  @Schema(description = "The multiplication factor used to calculate protein from nitrogen")
-  @JsonProperty("protein_conversion_factor")
-  public BigDecimal getProteinConversionFactor() {
-    return proteinConversionFactor;
-  }
-  public void setProteinConversionFactor(BigDecimal proteinConversionFactor) {
-    this.proteinConversionFactor = proteinConversionFactor;
   }
 
   /**
@@ -532,8 +491,6 @@ public class BrandedFoodObjectItems   {
         Objects.equals(serving, brandedFoodObjectItems.serving) &&
         Objects.equals(categories, brandedFoodObjectItems.categories) &&
         Objects.equals(nutrients, brandedFoodObjectItems.nutrients) &&
-        Objects.equals(calorieConversionFactor, brandedFoodObjectItems.calorieConversionFactor) &&
-        Objects.equals(proteinConversionFactor, brandedFoodObjectItems.proteinConversionFactor) &&
         Objects.equals(dietLabels, brandedFoodObjectItems.dietLabels) &&
         Objects.equals(dietFlags, brandedFoodObjectItems.dietFlags) &&
         Objects.equals(packagingPhotos, brandedFoodObjectItems.packagingPhotos) &&
@@ -553,7 +510,7 @@ public class BrandedFoodObjectItems   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords);
+    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, dietLabels, dietFlags, packagingPhotos, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords);
   }
 
   @Override
@@ -568,8 +525,6 @@ public class BrandedFoodObjectItems   {
     sb.append("    serving: ").append(toIndentedString(serving)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    nutrients: ").append(toIndentedString(nutrients)).append("\n");
-    sb.append("    calorieConversionFactor: ").append(toIndentedString(calorieConversionFactor)).append("\n");
-    sb.append("    proteinConversionFactor: ").append(toIndentedString(proteinConversionFactor)).append("\n");
     sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    dietFlags: ").append(toIndentedString(dietFlags)).append("\n");
     sb.append("    packagingPhotos: ").append(toIndentedString(packagingPhotos)).append("\n");
