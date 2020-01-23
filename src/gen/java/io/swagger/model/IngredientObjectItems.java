@@ -17,14 +17,14 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:15:58.178Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:57:41.405Z[GMT]")
 public class IngredientObjectItems   {
   @JsonProperty("name")
   private String name = null;
   @JsonProperty("categories")
   private List<String> categories = null;
   @JsonProperty("nutrients")
-  private IngredientObjectNutrients nutrients = null;
+  private List<IngredientObjectNutrients> nutrients = null;
   @JsonProperty("calorie_conversion_factor")
   private IngredientObjectCalorieConversionFactor calorieConversionFactor = null;
   @JsonProperty("protein_conversion_factor")
@@ -77,19 +77,20 @@ public class IngredientObjectItems   {
   }
 
   /**
+   * An array containing nutrient informatio objects for this food item
    **/
-  public IngredientObjectItems nutrients(IngredientObjectNutrients nutrients) {
+  public IngredientObjectItems nutrients(List<IngredientObjectNutrients> nutrients) {
     this.nutrients = nutrients;
     return this;
   }
 
   
-  @Schema(description = "")
+  @Schema(description = "An array containing nutrient informatio objects for this food item")
   @JsonProperty("nutrients")
-  public IngredientObjectNutrients getNutrients() {
+  public List<IngredientObjectNutrients> getNutrients() {
     return nutrients;
   }
-  public void setNutrients(IngredientObjectNutrients nutrients) {
+  public void setNutrients(List<IngredientObjectNutrients> nutrients) {
     this.nutrients = nutrients;
   }
 
