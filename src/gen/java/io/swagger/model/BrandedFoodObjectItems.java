@@ -3,7 +3,6 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.model.BrandedFoodObjectCalorieConversionFactor;
-import io.swagger.model.BrandedFoodObjectComponents;
 import io.swagger.model.BrandedFoodObjectCountryDetails;
 import io.swagger.model.BrandedFoodObjectDietFlags;
 import io.swagger.model.BrandedFoodObjectDietLabels;
@@ -11,7 +10,6 @@ import io.swagger.model.BrandedFoodObjectIngredients;
 import io.swagger.model.BrandedFoodObjectNutrients;
 import io.swagger.model.BrandedFoodObjectPackage;
 import io.swagger.model.BrandedFoodObjectPackagingPhotos;
-import io.swagger.model.BrandedFoodObjectPortions;
 import io.swagger.model.BrandedFoodObjectServing;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
@@ -23,7 +21,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:08:00.056Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:12:53.320Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;
@@ -51,10 +49,6 @@ public class BrandedFoodObjectItems   {
   private List<BrandedFoodObjectDietFlags> dietFlags = null;
   @JsonProperty("packaging_photos")
   private BrandedFoodObjectPackagingPhotos packagingPhotos = null;
-  @JsonProperty("components")
-  private List<BrandedFoodObjectComponents> components = null;
-  @JsonProperty("portions")
-  private List<BrandedFoodObjectPortions> portions = null;
   @JsonProperty("allergens")
   private List<String> allergens = null;
   @JsonProperty("brand_list")
@@ -305,42 +299,6 @@ public class BrandedFoodObjectItems   {
   }
   public void setPackagingPhotos(BrandedFoodObjectPackagingPhotos packagingPhotos) {
     this.packagingPhotos = packagingPhotos;
-  }
-
-  /**
-   * An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
-   **/
-  public BrandedFoodObjectItems components(List<BrandedFoodObjectComponents> components) {
-    this.components = components;
-    return this;
-  }
-
-  
-  @Schema(description = "An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)")
-  @JsonProperty("components")
-  public List<BrandedFoodObjectComponents> getComponents() {
-    return components;
-  }
-  public void setComponents(List<BrandedFoodObjectComponents> components) {
-    this.components = components;
-  }
-
-  /**
-   * An array of objects containing information on discrete amounts of a food found in this item
-   **/
-  public BrandedFoodObjectItems portions(List<BrandedFoodObjectPortions> portions) {
-    this.portions = portions;
-    return this;
-  }
-
-  
-  @Schema(description = "An array of objects containing information on discrete amounts of a food found in this item")
-  @JsonProperty("portions")
-  public List<BrandedFoodObjectPortions> getPortions() {
-    return portions;
-  }
-  public void setPortions(List<BrandedFoodObjectPortions> portions) {
-    this.portions = portions;
   }
 
   /**
@@ -599,8 +557,6 @@ public class BrandedFoodObjectItems   {
         Objects.equals(dietLabels, brandedFoodObjectItems.dietLabels) &&
         Objects.equals(dietFlags, brandedFoodObjectItems.dietFlags) &&
         Objects.equals(packagingPhotos, brandedFoodObjectItems.packagingPhotos) &&
-        Objects.equals(components, brandedFoodObjectItems.components) &&
-        Objects.equals(portions, brandedFoodObjectItems.portions) &&
         Objects.equals(allergens, brandedFoodObjectItems.allergens) &&
         Objects.equals(brandList, brandedFoodObjectItems.brandList) &&
         Objects.equals(countries, brandedFoodObjectItems.countries) &&
@@ -618,7 +574,7 @@ public class BrandedFoodObjectItems   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, components, portions, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords, footnote);
+    return Objects.hash(barcode, name, brand, ingredients, _package, serving, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, dietFlags, packagingPhotos, allergens, brandList, countries, countryDetails, palmOilIngredients, ingredientList, hasEnglishIngredients, minerals, traces, vitamins, description, keywords, footnote);
   }
 
   @Override
@@ -638,8 +594,6 @@ public class BrandedFoodObjectItems   {
     sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    dietFlags: ").append(toIndentedString(dietFlags)).append("\n");
     sb.append("    packagingPhotos: ").append(toIndentedString(packagingPhotos)).append("\n");
-    sb.append("    components: ").append(toIndentedString(components)).append("\n");
-    sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
     sb.append("    allergens: ").append(toIndentedString(allergens)).append("\n");
     sb.append("    brandList: ").append(toIndentedString(brandList)).append("\n");
     sb.append("    countries: ").append(toIndentedString(countries)).append("\n");

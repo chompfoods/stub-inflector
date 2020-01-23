@@ -3,10 +3,10 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.model.BrandedFoodObjectCalorieConversionFactor;
-import io.swagger.model.BrandedFoodObjectComponents;
 import io.swagger.model.BrandedFoodObjectDietLabels;
-import io.swagger.model.BrandedFoodObjectPortions;
+import io.swagger.model.IngredientObjectComponents;
 import io.swagger.model.IngredientObjectNutrients;
+import io.swagger.model.IngredientObjectPortions;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:08:00.056Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:12:53.320Z[GMT]")
 public class IngredientObjectItems   {
   @JsonProperty("name")
   private String name = null;
@@ -32,9 +32,9 @@ public class IngredientObjectItems   {
   @JsonProperty("diet_labels")
   private BrandedFoodObjectDietLabels dietLabels = null;
   @JsonProperty("components")
-  private List<BrandedFoodObjectComponents> components = null;
+  private List<IngredientObjectComponents> components = null;
   @JsonProperty("portions")
-  private List<BrandedFoodObjectPortions> portions = null;
+  private List<IngredientObjectPortions> portions = null;
   @JsonProperty("common_names")
   private String commonNames = null;
   @JsonProperty("description")
@@ -148,7 +148,7 @@ public class IngredientObjectItems   {
   /**
    * An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
    **/
-  public IngredientObjectItems components(List<BrandedFoodObjectComponents> components) {
+  public IngredientObjectItems components(List<IngredientObjectComponents> components) {
     this.components = components;
     return this;
   }
@@ -156,17 +156,17 @@ public class IngredientObjectItems   {
   
   @Schema(description = "An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)")
   @JsonProperty("components")
-  public List<BrandedFoodObjectComponents> getComponents() {
+  public List<IngredientObjectComponents> getComponents() {
     return components;
   }
-  public void setComponents(List<BrandedFoodObjectComponents> components) {
+  public void setComponents(List<IngredientObjectComponents> components) {
     this.components = components;
   }
 
   /**
    * An array of objects containing information on discrete amounts of a food found in this item
    **/
-  public IngredientObjectItems portions(List<BrandedFoodObjectPortions> portions) {
+  public IngredientObjectItems portions(List<IngredientObjectPortions> portions) {
     this.portions = portions;
     return this;
   }
@@ -174,10 +174,10 @@ public class IngredientObjectItems   {
   
   @Schema(description = "An array of objects containing information on discrete amounts of a food found in this item")
   @JsonProperty("portions")
-  public List<BrandedFoodObjectPortions> getPortions() {
+  public List<IngredientObjectPortions> getPortions() {
     return portions;
   }
-  public void setPortions(List<BrandedFoodObjectPortions> portions) {
+  public void setPortions(List<IngredientObjectPortions> portions) {
     this.portions = portions;
   }
 

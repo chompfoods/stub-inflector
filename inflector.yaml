@@ -6,7 +6,6 @@ modelMappings:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
   BrandedFoodObject : io.swagger.model.BrandedFoodObject
 BrandedFoodObjectCalorieConversionFactor : io.swagger.model.BrandedFoodObjectCalorieConversionFactor
-BrandedFoodObjectComponents : io.swagger.model.BrandedFoodObjectComponents
 BrandedFoodObjectCountryDetails : io.swagger.model.BrandedFoodObjectCountryDetails
 BrandedFoodObjectDietFlags : io.swagger.model.BrandedFoodObjectDietFlags
 BrandedFoodObjectDietLabels : io.swagger.model.BrandedFoodObjectDietLabels
@@ -23,13 +22,14 @@ BrandedFoodObjectPackagingPhotos : io.swagger.model.BrandedFoodObjectPackagingPh
 BrandedFoodObjectPackagingPhotosFront : io.swagger.model.BrandedFoodObjectPackagingPhotosFront
 BrandedFoodObjectPackagingPhotosIngredients : io.swagger.model.BrandedFoodObjectPackagingPhotosIngredients
 BrandedFoodObjectPackagingPhotosNutrition : io.swagger.model.BrandedFoodObjectPackagingPhotosNutrition
-BrandedFoodObjectPortions : io.swagger.model.BrandedFoodObjectPortions
 BrandedFoodObjectServing : io.swagger.model.BrandedFoodObjectServing
 BrandedFoodObjectServingChomp : io.swagger.model.BrandedFoodObjectServingChomp
 BrandedFoodObjectServingUsda : io.swagger.model.BrandedFoodObjectServingUsda
 IngredientObject : io.swagger.model.IngredientObject
+IngredientObjectComponents : io.swagger.model.IngredientObjectComponents
 IngredientObjectItems : io.swagger.model.IngredientObjectItems
 IngredientObjectNutrients : io.swagger.model.IngredientObjectNutrients
+IngredientObjectPortions : io.swagger.model.IngredientObjectPortions
 
 entityProcessors:
   - json
