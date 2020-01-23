@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T19:40:25.534Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:08:00.056Z[GMT]")
 public class BrandedFoodObjectNutrientsUsda   {
   @JsonProperty("id")
   private Integer id = null;

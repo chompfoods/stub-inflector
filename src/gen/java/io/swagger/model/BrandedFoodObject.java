@@ -12,7 +12,7 @@ import java.util.List;
  * Please read the description of each field in this API response object example. By default, the value of each field is **null**. This indicates an unknown state or that no data exists.
  **/
 @Schema(description = "Please read the description of each field in this API response object example. By default, the value of each field is **null**. This indicates an unknown state or that no data exists.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T19:40:25.534Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:08:00.056Z[GMT]")
 public class BrandedFoodObject   {
   @JsonProperty("items")
   private List<BrandedFoodObjectItems> items = null;

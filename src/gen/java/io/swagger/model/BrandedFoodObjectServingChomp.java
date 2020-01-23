@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * Serving information from Chomp&#x27;s internal database
  **/
 @Schema(description = "Serving information from Chomp's internal database")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-22T19:40:25.534Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T13:08:00.056Z[GMT]")
 public class BrandedFoodObjectServingChomp   {
   @JsonProperty("size")
   private String size = null;
