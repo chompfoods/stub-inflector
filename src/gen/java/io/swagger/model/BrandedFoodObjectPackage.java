@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing basic packaging information about this item
  **/
 @Schema(description = "An object containing basic packaging information about this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T17:11:28.101Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-24T13:21:53.276Z[GMT]")
 public class BrandedFoodObjectPackage   {
   @JsonProperty("quantity")
   private Integer quantity = null;

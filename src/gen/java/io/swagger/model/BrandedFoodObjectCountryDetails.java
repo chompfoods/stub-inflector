@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing additional information on the countries where this item is found
  **/
 @Schema(description = "An object containing additional information on the countries where this item is found")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-23T17:11:28.101Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-24T13:21:53.276Z[GMT]")
 public class BrandedFoodObjectCountryDetails   {
   @JsonProperty("english_speaking")
   private Integer englishSpeaking = null;
