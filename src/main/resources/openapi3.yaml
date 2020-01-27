@@ -101,7 +101,7 @@ paths:
       - name: limit
         in: query
         description: |
-          #### Set maximum number of records you want the API to return.
+          #### Set maximum number of records you want the API to return. The default value is "**10**."
 
           **Example**
           > ```&limit=10```
@@ -124,7 +124,7 @@ paths:
       - name: page
         in: query
         description: |
-          #### This is how you paginate the search result. By default, you will see the first 10 records. You must increment the page number to access the next 10 records, and so on.
+          #### This is how you paginate the search result. By default, you will see the first 10 records. You must increment the page number to access the next 10 records, and so on. The default value is "**1**."
 
           **Example**
           > ```&page=1```
@@ -327,7 +327,7 @@ paths:
       - name: limit
         in: query
         description: |
-          #### Set maximum number of records you want the API to return.
+          #### Set maximum number of records you want the API to return. The default value is "**10**."
 
           **Example**
           > ```&limit=10```
@@ -350,7 +350,7 @@ paths:
       - name: page
         in: query
         description: |
-          #### This is how you paginate the search result. By default, you will see the first 10 records. You must increment the page number to access the next 10 records, and so on.
+          #### This is how you paginate the search result. By default, you will see the first 10 records. You must increment the page number to access the next 10 records, and so on. The default value is "**1**."
 
           **Example**
           > ```&page=1```
@@ -415,7 +415,7 @@ paths:
       - name: raw
         in: query
         description: |
-          #### Optionally filter the search result to only include raw ingredients.
+          #### Optionally filter the search result to only include raw ingredients. The default value is "**false**."
 
           **Example**
           > ```&raw=true```
@@ -430,7 +430,7 @@ paths:
       - name: limit
         in: query
         description: |
-          #### Set maximum number of records you want the API to return, per search term.
+          #### Set maximum number of records you want the API to return, per search term. The default value is "**1**."
 
           **Example**
           > ```&limit=3```
