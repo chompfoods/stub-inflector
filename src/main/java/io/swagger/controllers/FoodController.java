@@ -13,7 +13,7 @@ import io.swagger.model.*;
 import io.swagger.model.BrandedFoodObject;
 import io.swagger.model.IngredientObject;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-27T21:16:22.867Z[GMT]")public class FoodController  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-27T21:18:02.346Z[GMT]")public class FoodController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map
    * Directly to operation calls from the routing logic.  Because the inflector
@@ -39,7 +39,7 @@ import io.swagger.model.IngredientObject;
   */
 
   /*
-    public ResponseContext foodIngredientSearchPhpGET(RequestContext request , Integer find , Boolean raw , Integer limit ) {
+    public ResponseContext foodIngredientSearchPhpGET(RequestContext request , String find , Boolean raw , Integer limit ) {
         return new ResponseContext().status(Status.INTERNAL_SERVER_ERROR).entity( "Not implemented" );
     }
   */
