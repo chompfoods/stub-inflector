@@ -18,7 +18,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:14:16.064Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:53:56.655Z[GMT]")
 public class BrandedFoodObjectItems   {
   @JsonProperty("barcode")
   private String barcode = null;

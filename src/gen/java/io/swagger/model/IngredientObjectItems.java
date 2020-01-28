@@ -2,7 +2,6 @@ package io.swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.model.BrandedFoodObjectDietLabels;
 import io.swagger.model.IngredientObjectCalorieConversionFactor;
 import io.swagger.model.IngredientObjectComponents;
 import io.swagger.model.IngredientObjectNutrients;
@@ -17,7 +16,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:14:16.064Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:53:56.655Z[GMT]")
 public class IngredientObjectItems   {
   @JsonProperty("name")
   private String name = null;
@@ -29,16 +28,12 @@ public class IngredientObjectItems   {
   private IngredientObjectCalorieConversionFactor calorieConversionFactor = null;
   @JsonProperty("protein_conversion_factor")
   private BigDecimal proteinConversionFactor = null;
-  @JsonProperty("diet_labels")
-  private BrandedFoodObjectDietLabels dietLabels = null;
   @JsonProperty("components")
   private List<IngredientObjectComponents> components = null;
   @JsonProperty("portions")
   private List<IngredientObjectPortions> portions = null;
   @JsonProperty("common_name")
   private String commonName = null;
-  @JsonProperty("description")
-  private String description = null;
   @JsonProperty("footnote")
   private String footnote = null;
   /**
@@ -130,23 +125,6 @@ public class IngredientObjectItems   {
   }
 
   /**
-   **/
-  public IngredientObjectItems dietLabels(BrandedFoodObjectDietLabels dietLabels) {
-    this.dietLabels = dietLabels;
-    return this;
-  }
-
-  
-  @Schema(description = "")
-  @JsonProperty("diet_labels")
-  public BrandedFoodObjectDietLabels getDietLabels() {
-    return dietLabels;
-  }
-  public void setDietLabels(BrandedFoodObjectDietLabels dietLabels) {
-    this.dietLabels = dietLabels;
-  }
-
-  /**
    * An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
    **/
   public IngredientObjectItems components(List<IngredientObjectComponents> components) {
@@ -201,24 +179,6 @@ public class IngredientObjectItems   {
   }
 
   /**
-   * A description of this item
-   **/
-  public IngredientObjectItems description(String description) {
-    this.description = description;
-    return this;
-  }
-
-  
-  @Schema(description = "A description of this item")
-  @JsonProperty("description")
-  public String getDescription() {
-    return description;
-  }
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
-  /**
    * Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
    **/
   public IngredientObjectItems footnote(String footnote) {
@@ -251,17 +211,15 @@ public class IngredientObjectItems   {
         Objects.equals(nutrients, ingredientObjectItems.nutrients) &&
         Objects.equals(calorieConversionFactor, ingredientObjectItems.calorieConversionFactor) &&
         Objects.equals(proteinConversionFactor, ingredientObjectItems.proteinConversionFactor) &&
-        Objects.equals(dietLabels, ingredientObjectItems.dietLabels) &&
         Objects.equals(components, ingredientObjectItems.components) &&
         Objects.equals(portions, ingredientObjectItems.portions) &&
         Objects.equals(commonName, ingredientObjectItems.commonName) &&
-        Objects.equals(description, ingredientObjectItems.description) &&
         Objects.equals(footnote, ingredientObjectItems.footnote);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, dietLabels, components, portions, commonName, description, footnote);
+    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, components, portions, commonName, footnote);
   }
 
   @Override
@@ -273,11 +231,9 @@ public class IngredientObjectItems   {
     sb.append("    nutrients: ").append(toIndentedString(nutrients)).append("\n");
     sb.append("    calorieConversionFactor: ").append(toIndentedString(calorieConversionFactor)).append("\n");
     sb.append("    proteinConversionFactor: ").append(toIndentedString(proteinConversionFactor)).append("\n");
-    sb.append("    dietLabels: ").append(toIndentedString(dietLabels)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
     sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
     sb.append("}");
     return sb.toString();

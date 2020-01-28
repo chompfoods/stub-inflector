@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * An object containing information on a specific food portion found in this item
  **/
 @Schema(description = "An object containing information on a specific food portion found in this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:14:16.064Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:53:56.655Z[GMT]")
 public class IngredientObjectPortions   {
   @JsonProperty("measurement_unit")
   private String measurementUnit = null;

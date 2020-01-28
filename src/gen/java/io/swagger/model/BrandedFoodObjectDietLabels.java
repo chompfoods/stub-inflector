@@ -12,7 +12,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing this item&#x27;s compatibility grades for each supported diet
  **/
 @Schema(description = "An object containing this item's compatibility grades for each supported diet")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:14:16.064Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:53:56.655Z[GMT]")
 public class BrandedFoodObjectDietLabels   {
   @JsonProperty("vegan")
   private BrandedFoodObjectDietLabelsVegan vegan = null;
