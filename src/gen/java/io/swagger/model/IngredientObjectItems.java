@@ -16,7 +16,7 @@ import java.util.List;
  * An object containing information for this specific item.
  **/
 @Schema(description = "An object containing information for this specific item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T13:53:56.655Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T14:07:08.314Z[GMT]")
 public class IngredientObjectItems   {
   @JsonProperty("name")
   private String name = null;
@@ -36,6 +36,10 @@ public class IngredientObjectItems   {
   private String commonName = null;
   @JsonProperty("footnote")
   private String footnote = null;
+  @JsonProperty("search_term")
+  private String searchTerm = null;
+  @JsonProperty("score")
+  private String score = null;
   /**
    * Item name as provided by brand owner or as shown on packaging
    **/
@@ -196,6 +200,42 @@ public class IngredientObjectItems   {
     this.footnote = footnote;
   }
 
+  /**
+   * The original search term that found this food item.
+   **/
+  public IngredientObjectItems searchTerm(String searchTerm) {
+    this.searchTerm = searchTerm;
+    return this;
+  }
+
+  
+  @Schema(description = "The original search term that found this food item.")
+  @JsonProperty("search_term")
+  public String getSearchTerm() {
+    return searchTerm;
+  }
+  public void setSearchTerm(String searchTerm) {
+    this.searchTerm = searchTerm;
+  }
+
+  /**
+   * A value that represents how similar the name of this food item is to the original search term.
+   **/
+  public IngredientObjectItems score(String score) {
+    this.score = score;
+    return this;
+  }
+
+  
+  @Schema(description = "A value that represents how similar the name of this food item is to the original search term.")
+  @JsonProperty("score")
+  public String getScore() {
+    return score;
+  }
+  public void setScore(String score) {
+    this.score = score;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -214,12 +254,14 @@ public class IngredientObjectItems   {
         Objects.equals(components, ingredientObjectItems.components) &&
         Objects.equals(portions, ingredientObjectItems.portions) &&
         Objects.equals(commonName, ingredientObjectItems.commonName) &&
-        Objects.equals(footnote, ingredientObjectItems.footnote);
+        Objects.equals(footnote, ingredientObjectItems.footnote) &&
+        Objects.equals(searchTerm, ingredientObjectItems.searchTerm) &&
+        Objects.equals(score, ingredientObjectItems.score);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, components, portions, commonName, footnote);
+    return Objects.hash(name, categories, nutrients, calorieConversionFactor, proteinConversionFactor, components, portions, commonName, footnote, searchTerm, score);
   }
 
   @Override
@@ -235,6 +277,8 @@ public class IngredientObjectItems   {
     sb.append("    portions: ").append(toIndentedString(portions)).append("\n");
     sb.append("    commonName: ").append(toIndentedString(commonName)).append("\n");
     sb.append("    footnote: ").append(toIndentedString(footnote)).append("\n");
+    sb.append("    searchTerm: ").append(toIndentedString(searchTerm)).append("\n");
+    sb.append("    score: ").append(toIndentedString(score)).append("\n");
     sb.append("}");
     return sb.toString();
   }
