@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing information on this item&#x27;s compatibility with Gluten Free diets
  **/
 @Schema(description = "An object containing information on this item's compatibility with Gluten Free diets")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T14:08:55.979Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")
 public class BrandedFoodObjectDietLabelsGlutenFree   {
   @JsonProperty("name")
   private String name = null;

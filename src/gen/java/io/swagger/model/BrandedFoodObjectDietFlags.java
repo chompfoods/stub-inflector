@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing information on an individual ingredient that was flagged as potentially not being compatible with a certain diet
  **/
 @Schema(description = "An object containing information on an individual ingredient that was flagged as potentially not being compatible with a certain diet")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-28T14:08:55.979Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")
 public class BrandedFoodObjectDietFlags   {
   @JsonProperty("ingredient")
   private String ingredient = null;
