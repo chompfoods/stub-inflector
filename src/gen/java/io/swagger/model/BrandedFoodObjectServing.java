@@ -9,20 +9,18 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * An object containing serving information for this item
  **/
 @Schema(description = "An object containing serving information for this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")
 public class BrandedFoodObjectServing   {
   @JsonProperty("size")
-  private Integer size = null;
+  private String size = null;
   @JsonProperty("measurement_unit")
   private String measurementUnit = null;
   @JsonProperty("size_fulltext")
   private String sizeFulltext = null;
-  @JsonProperty("total")
-  private Integer total = null;
   /**
    * Serving size
    **/
-  public BrandedFoodObjectServing size(Integer size) {
+  public BrandedFoodObjectServing size(String size) {
     this.size = size;
     return this;
   }
@@ -30,15 +28,15 @@ public class BrandedFoodObjectServing   {
   
   @Schema(description = "Serving size")
   @JsonProperty("size")
-  public Integer getSize() {
+  public String getSize() {
     return size;
   }
-  public void setSize(Integer size) {
+  public void setSize(String size) {
     this.size = size;
   }
 
   /**
-   * Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp)
+   * Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp)
    **/
   public BrandedFoodObjectServing measurementUnit(String measurementUnit) {
     this.measurementUnit = measurementUnit;
@@ -46,7 +44,7 @@ public class BrandedFoodObjectServing   {
   }
 
   
-  @Schema(description = "Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp)")
+  @Schema(description = "Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp)")
   @JsonProperty("measurement_unit")
   public String getMeasurementUnit() {
     return measurementUnit;
@@ -73,24 +71,6 @@ public class BrandedFoodObjectServing   {
     this.sizeFulltext = sizeFulltext;
   }
 
-  /**
-   * Total servings
-   **/
-  public BrandedFoodObjectServing total(Integer total) {
-    this.total = total;
-    return this;
-  }
-
-  
-  @Schema(description = "Total servings")
-  @JsonProperty("total")
-  public Integer getTotal() {
-    return total;
-  }
-  public void setTotal(Integer total) {
-    this.total = total;
-  }
-
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -103,13 +83,12 @@ public class BrandedFoodObjectServing   {
     BrandedFoodObjectServing brandedFoodObjectServing = (BrandedFoodObjectServing) o;
     return Objects.equals(size, brandedFoodObjectServing.size) &&
         Objects.equals(measurementUnit, brandedFoodObjectServing.measurementUnit) &&
-        Objects.equals(sizeFulltext, brandedFoodObjectServing.sizeFulltext) &&
-        Objects.equals(total, brandedFoodObjectServing.total);
+        Objects.equals(sizeFulltext, brandedFoodObjectServing.sizeFulltext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(size, measurementUnit, sizeFulltext, total);
+    return Objects.hash(size, measurementUnit, sizeFulltext);
   }
 
   @Override
@@ -119,7 +98,6 @@ public class BrandedFoodObjectServing   {
     sb.append("    size: ").append(toIndentedString(size)).append("\n");
     sb.append("    measurementUnit: ").append(toIndentedString(measurementUnit)).append("\n");
     sb.append("    sizeFulltext: ").append(toIndentedString(sizeFulltext)).append("\n");
-    sb.append("    total: ").append(toIndentedString(total)).append("\n");
     sb.append("}");
     return sb.toString();
   }

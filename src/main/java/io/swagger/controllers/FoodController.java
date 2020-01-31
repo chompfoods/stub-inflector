@@ -11,8 +11,9 @@ import java.util.List;
 import io.swagger.model.*;
 
 import io.swagger.model.BrandedFoodObject;
+import io.swagger.model.IngredientObject;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")public class FoodController  {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")public class FoodController  {
   /** 
    * Uncomment and implement as you see fit.  These operations will map
    * Directly to operation calls from the routing logic.  Because the inflector
@@ -26,19 +27,19 @@ import io.swagger.model.BrandedFoodObject;
   */
 
   /*
-    public ResponseContext foodBrandedIdPhpGET(RequestContext request , Integer id , String source ) {
-        return new ResponseContext().status(Status.INTERNAL_SERVER_ERROR).entity( "Not implemented" );
-    }
-  */
-
-  /*
-    public ResponseContext foodBrandedNamePhpGET(RequestContext request , String name , Integer limit ) {
+    public ResponseContext foodBrandedNamePhpGET(RequestContext request , String name , Integer limit , Integer page ) {
         return new ResponseContext().status(Status.INTERNAL_SERVER_ERROR).entity( "Not implemented" );
     }
   */
 
   /*
     public ResponseContext foodBrandedSearchPhpGET(RequestContext request , String allergen , String brand , String category , String country , String diet , String ingredient , String keyword , String mineral , String nutrient , String palmOil , String trace , String vitamin , Integer limit , Integer page ) {
+        return new ResponseContext().status(Status.INTERNAL_SERVER_ERROR).entity( "Not implemented" );
+    }
+  */
+
+  /*
+    public ResponseContext foodIngredientSearchPhpGET(RequestContext request , String find , Integer limit ) {
         return new ResponseContext().status(Status.INTERNAL_SERVER_ERROR).entity( "Not implemented" );
     }
   */

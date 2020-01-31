@@ -5,8 +5,6 @@ modelMappings:
   # to enable explicit mappings, use this syntax:
   DefinitionFromSwaggerSpecification: fully.qualified.path.to.Model
   BrandedFoodObject : io.swagger.model.BrandedFoodObject
-BrandedFoodObjectCalorieConversionFactor : io.swagger.model.BrandedFoodObjectCalorieConversionFactor
-BrandedFoodObjectComponents : io.swagger.model.BrandedFoodObjectComponents
 BrandedFoodObjectCountryDetails : io.swagger.model.BrandedFoodObjectCountryDetails
 BrandedFoodObjectDietFlags : io.swagger.model.BrandedFoodObjectDietFlags
 BrandedFoodObjectDietLabels : io.swagger.model.BrandedFoodObjectDietLabels
@@ -15,18 +13,18 @@ BrandedFoodObjectDietLabelsVegan : io.swagger.model.BrandedFoodObjectDietLabelsV
 BrandedFoodObjectDietLabelsVegetarian : io.swagger.model.BrandedFoodObjectDietLabelsVegetarian
 BrandedFoodObjectItems : io.swagger.model.BrandedFoodObjectItems
 BrandedFoodObjectNutrients : io.swagger.model.BrandedFoodObjectNutrients
-BrandedFoodObjectNutrientsChomp : io.swagger.model.BrandedFoodObjectNutrientsChomp
-BrandedFoodObjectNutrientsUsda : io.swagger.model.BrandedFoodObjectNutrientsUsda
 BrandedFoodObjectPackage : io.swagger.model.BrandedFoodObjectPackage
 BrandedFoodObjectPackagingPhotos : io.swagger.model.BrandedFoodObjectPackagingPhotos
 BrandedFoodObjectPackagingPhotosFront : io.swagger.model.BrandedFoodObjectPackagingPhotosFront
 BrandedFoodObjectPackagingPhotosIngredients : io.swagger.model.BrandedFoodObjectPackagingPhotosIngredients
 BrandedFoodObjectPackagingPhotosNutrition : io.swagger.model.BrandedFoodObjectPackagingPhotosNutrition
-BrandedFoodObjectPortions : io.swagger.model.BrandedFoodObjectPortions
 BrandedFoodObjectServing : io.swagger.model.BrandedFoodObjectServing
 IngredientObject : io.swagger.model.IngredientObject
+IngredientObjectCalorieConversionFactor : io.swagger.model.IngredientObjectCalorieConversionFactor
+IngredientObjectComponents : io.swagger.model.IngredientObjectComponents
 IngredientObjectItems : io.swagger.model.IngredientObjectItems
 IngredientObjectNutrients : io.swagger.model.IngredientObjectNutrients
+IngredientObjectPortions : io.swagger.model.IngredientObjectPortions
 
 entityProcessors:
   - json

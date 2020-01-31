@@ -10,8 +10,8 @@ import java.math.BigDecimal;
  * An object containing information on a specific food portion found in this item
  **/
 @Schema(description = "An object containing information on a specific food portion found in this item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")
-public class BrandedFoodObjectPortions   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")
+public class IngredientObjectPortions   {
   @JsonProperty("measurement_unit")
   private String measurementUnit = null;
   @JsonProperty("description")
@@ -27,7 +27,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * The unit used for measure (e.g. if mesure is 3 tsp, the unit is tsp)
    **/
-  public BrandedFoodObjectPortions measurementUnit(String measurementUnit) {
+  public IngredientObjectPortions measurementUnit(String measurementUnit) {
     this.measurementUnit = measurementUnit;
     return this;
   }
@@ -45,7 +45,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * Comments that provide more specificity on the measure. For example, for a pizza measure the dissemination text might be 1 slice is 1/8th of a 14 inch pizza.
    **/
-  public BrandedFoodObjectPortions description(String description) {
+  public IngredientObjectPortions description(String description) {
     this.description = description;
     return this;
   }
@@ -63,7 +63,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * Qualifier of the measure (e.g. related to food shape or form) (e.g. melted, crushed, diced)
    **/
-  public BrandedFoodObjectPortions modifier(String modifier) {
+  public IngredientObjectPortions modifier(String modifier) {
     this.modifier = modifier;
     return this;
   }
@@ -81,7 +81,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * The weight of the measure in grams
    **/
-  public BrandedFoodObjectPortions gramWeight(BigDecimal gramWeight) {
+  public IngredientObjectPortions gramWeight(BigDecimal gramWeight) {
     this.gramWeight = gramWeight;
     return this;
   }
@@ -99,7 +99,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * The number of observations on which the measure is based
    **/
-  public BrandedFoodObjectPortions dataPoints(Integer dataPoints) {
+  public IngredientObjectPortions dataPoints(Integer dataPoints) {
     this.dataPoints = dataPoints;
     return this;
   }
@@ -117,7 +117,7 @@ public class BrandedFoodObjectPortions   {
   /**
    * Comments on any unusual aspects of the measure. Examples might includes caveats on the usage of a measure, or reasons why a measure gram weight is an unexpected value.
    **/
-  public BrandedFoodObjectPortions footnote(String footnote) {
+  public IngredientObjectPortions footnote(String footnote) {
     this.footnote = footnote;
     return this;
   }
@@ -141,13 +141,13 @@ public class BrandedFoodObjectPortions   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObjectPortions brandedFoodObjectPortions = (BrandedFoodObjectPortions) o;
-    return Objects.equals(measurementUnit, brandedFoodObjectPortions.measurementUnit) &&
-        Objects.equals(description, brandedFoodObjectPortions.description) &&
-        Objects.equals(modifier, brandedFoodObjectPortions.modifier) &&
-        Objects.equals(gramWeight, brandedFoodObjectPortions.gramWeight) &&
-        Objects.equals(dataPoints, brandedFoodObjectPortions.dataPoints) &&
-        Objects.equals(footnote, brandedFoodObjectPortions.footnote);
+    IngredientObjectPortions ingredientObjectPortions = (IngredientObjectPortions) o;
+    return Objects.equals(measurementUnit, ingredientObjectPortions.measurementUnit) &&
+        Objects.equals(description, ingredientObjectPortions.description) &&
+        Objects.equals(modifier, ingredientObjectPortions.modifier) &&
+        Objects.equals(gramWeight, ingredientObjectPortions.gramWeight) &&
+        Objects.equals(dataPoints, ingredientObjectPortions.dataPoints) &&
+        Objects.equals(footnote, ingredientObjectPortions.footnote);
   }
 
   @Override
@@ -158,7 +158,7 @@ public class BrandedFoodObjectPortions   {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObjectPortions {\n");
+    sb.append("class IngredientObjectPortions {\n");
     sb.append("    measurementUnit: ").append(toIndentedString(measurementUnit)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    modifier: ").append(toIndentedString(modifier)).append("\n");

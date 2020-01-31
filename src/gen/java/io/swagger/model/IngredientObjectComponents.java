@@ -10,8 +10,8 @@ import java.math.BigDecimal;
  * An object containing information on a specific component of this food item
  **/
 @Schema(description = "An object containing information on a specific component of this food item")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-18T04:54:00.820Z[GMT]")
-public class BrandedFoodObjectComponents   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2020-01-30T02:08:15.824Z[GMT]")
+public class IngredientObjectComponents   {
   @JsonProperty("name")
   private String name = null;
   @JsonProperty("pct_weight")
@@ -25,7 +25,7 @@ public class BrandedFoodObjectComponents   {
   /**
    * The kind of component, e.g. bone
    **/
-  public BrandedFoodObjectComponents name(String name) {
+  public IngredientObjectComponents name(String name) {
     this.name = name;
     return this;
   }
@@ -43,7 +43,7 @@ public class BrandedFoodObjectComponents   {
   /**
    * The weight of the component as a percentage of the total weight of the food
    **/
-  public BrandedFoodObjectComponents pctWeight(BigDecimal pctWeight) {
+  public IngredientObjectComponents pctWeight(BigDecimal pctWeight) {
     this.pctWeight = pctWeight;
     return this;
   }
@@ -61,7 +61,7 @@ public class BrandedFoodObjectComponents   {
   /**
    * The weight of the component in grams
    **/
-  public BrandedFoodObjectComponents gramWeight(BigDecimal gramWeight) {
+  public IngredientObjectComponents gramWeight(BigDecimal gramWeight) {
     this.gramWeight = gramWeight;
     return this;
   }
@@ -79,7 +79,7 @@ public class BrandedFoodObjectComponents   {
   /**
    * Whether the component is refuse, i.e. not edible
    **/
-  public BrandedFoodObjectComponents isRefuse(Boolean isRefuse) {
+  public IngredientObjectComponents isRefuse(Boolean isRefuse) {
     this.isRefuse = isRefuse;
     return this;
   }
@@ -97,7 +97,7 @@ public class BrandedFoodObjectComponents   {
   /**
    * The number of obersvations on which the measure is based
    **/
-  public BrandedFoodObjectComponents dataPoints(Integer dataPoints) {
+  public IngredientObjectComponents dataPoints(Integer dataPoints) {
     this.dataPoints = dataPoints;
     return this;
   }
@@ -121,12 +121,12 @@ public class BrandedFoodObjectComponents   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObjectComponents brandedFoodObjectComponents = (BrandedFoodObjectComponents) o;
-    return Objects.equals(name, brandedFoodObjectComponents.name) &&
-        Objects.equals(pctWeight, brandedFoodObjectComponents.pctWeight) &&
-        Objects.equals(gramWeight, brandedFoodObjectComponents.gramWeight) &&
-        Objects.equals(isRefuse, brandedFoodObjectComponents.isRefuse) &&
-        Objects.equals(dataPoints, brandedFoodObjectComponents.dataPoints);
+    IngredientObjectComponents ingredientObjectComponents = (IngredientObjectComponents) o;
+    return Objects.equals(name, ingredientObjectComponents.name) &&
+        Objects.equals(pctWeight, ingredientObjectComponents.pctWeight) &&
+        Objects.equals(gramWeight, ingredientObjectComponents.gramWeight) &&
+        Objects.equals(isRefuse, ingredientObjectComponents.isRefuse) &&
+        Objects.equals(dataPoints, ingredientObjectComponents.dataPoints);
   }
 
   @Override
@@ -137,7 +137,7 @@ public class BrandedFoodObjectComponents   {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObjectComponents {\n");
+    sb.append("class IngredientObjectComponents {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    pctWeight: ").append(toIndentedString(pctWeight)).append("\n");
     sb.append("    gramWeight: ").append(toIndentedString(gramWeight)).append("\n");
