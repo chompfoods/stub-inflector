@@ -25,6 +25,14 @@ IngredientObjectComponents : io.swagger.model.IngredientObjectComponents
 IngredientObjectItems : io.swagger.model.IngredientObjectItems
 IngredientObjectNutrients : io.swagger.model.IngredientObjectNutrients
 IngredientObjectPortions : io.swagger.model.IngredientObjectPortions
+RecipeObject : io.swagger.model.RecipeObject
+RecipeObjectAttributes : io.swagger.model.RecipeObjectAttributes
+RecipeObjectIngredients : io.swagger.model.RecipeObjectIngredients
+RecipeObjectItems : io.swagger.model.RecipeObjectItems
+RecipeObjectMeta : io.swagger.model.RecipeObjectMeta
+RecipeObjectMetaImages : io.swagger.model.RecipeObjectMetaImages
+RecipeObjectNutrients : io.swagger.model.RecipeObjectNutrients
+RecipeObjectNutrientsCalories : io.swagger.model.RecipeObjectNutrientsCalories
 
 entityProcessors:
   - json

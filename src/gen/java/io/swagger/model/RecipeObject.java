@@ -2,7 +2,7 @@ package io.swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.model.BrandedFoodObjectItems;
+import io.swagger.model.RecipeObjectItems;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +13,13 @@ import java.util.List;
  **/
 @Schema(description = "Please read the description of each field in this API response object example. By default, the value of each field is **null**. This indicates an unknown state or that no data exists.")
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaInflectorServerCodegen", date = "2021-03-09T22:27:14.607Z[GMT]")
-public class BrandedFoodObject   {
+public class RecipeObject   {
   @JsonProperty("items")
-  private List<BrandedFoodObjectItems> items = null;
+  private List<RecipeObjectItems> items = null;
   /**
    * An array containing an object for each individual item returned by your API call.
    **/
-  public BrandedFoodObject items(List<BrandedFoodObjectItems> items) {
+  public RecipeObject items(List<RecipeObjectItems> items) {
     this.items = items;
     return this;
   }
@@ -27,10 +27,10 @@ public class BrandedFoodObject   {
   
   @Schema(description = "An array containing an object for each individual item returned by your API call.")
   @JsonProperty("items")
-  public List<BrandedFoodObjectItems> getItems() {
+  public List<RecipeObjectItems> getItems() {
     return items;
   }
-  public void setItems(List<BrandedFoodObjectItems> items) {
+  public void setItems(List<RecipeObjectItems> items) {
     this.items = items;
   }
 
@@ -43,8 +43,8 @@ public class BrandedFoodObject   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BrandedFoodObject brandedFoodObject = (BrandedFoodObject) o;
-    return Objects.equals(items, brandedFoodObject.items);
+    RecipeObject recipeObject = (RecipeObject) o;
+    return Objects.equals(items, recipeObject.items);
   }
 
   @Override
@@ -55,7 +55,7 @@ public class BrandedFoodObject   {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class BrandedFoodObject {\n");
+    sb.append("class RecipeObject {\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
     return sb.toString();
